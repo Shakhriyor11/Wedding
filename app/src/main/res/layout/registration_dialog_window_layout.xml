@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/ic_close_button_24"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+        <TextView
+            android:id="@+id/tvRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Регистрация"
+            android:textStyle="normal"
+            android:textSize="25sp"
+            android:textColor="#0A0A0A"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/editTextName"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/registration_name_text"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintTop_toBottomOf="@id/tvRegistration"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/editTextDate"/>
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ДАТА"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@id/editTextName"
+            app:layout_constraintRight_toLeftOf="@id/imgCalendar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/establishmentSpinner"/>
+
+        <ImageView
+            android:id="@+id/imgCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            app:layout_constraintTop_toTopOf="@id/editTextDate"
+            app:layout_constraintBottom_toBottomOf="@id/editTextDate"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/editTextDate"
+            android:src="@drawable/ic_baseline_calendar_month_24"/>
+
+        <Spinner
+            android:id="@+id/establishmentSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/eventsEstablishment"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/editTextDate"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/editTextNumber"/>
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="+998 __ ___ __ __"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@id/establishmentSpinner"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/registrationButton"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registrationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/registr_button_style"
+            android:text="@string/registr_button_text"
+            android:textColor="#FFFF"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintTop_toBottomOf="@id/editTextNumber"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

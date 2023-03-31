@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Wedding</string>
+    <string name="intro_text">Полный комплекс услуг по организации и обслуживанием торжественных мероприятий.</string>
+    <string name="logo">Event</string>
+    <string name="gallery_title">Галарея</string>
+    <string name="textView_events">Мероприятия</string>
+    <string name="event_establishment">Заведения мероприятии</string>
+    <string name="services">Услуги</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_wedding">Свадба</string>
+    <string name="unselected_button_text">Выбрать</string>
+    <string name="checkOut_button_text">Оформить</string>
+    <string name="footer_logo">Event</string>
+    <string name="header_button_text">Выбрать</string>
+    <string name="registration_name_text">Имя Фамилия</string>
+    <string name="registr_button_text">Зарегистрироваться</string>
+
+    <string-array name="eventsEstablishment">
+        <item>Элегантный ресторан</item>
+        <item>Элегантный ресторан</item>
+        <item>Элегантный ресторан</item>
+    </string-array>
+</resources>
